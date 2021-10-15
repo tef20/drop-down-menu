@@ -11,5 +11,3 @@ export default function idGen(lastID) {
 
   return { current, next };
 }
-
-// export { idGen };

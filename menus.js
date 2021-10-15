@@ -31,7 +31,7 @@ function createMenuItem(text, id) {
   menuItem.appendChild(itemLink);
 
   const itemContent = document.createElement('span');
-  itemContent.textContent = text;
+  itemContent.textContent = text ?? '';
   itemContent.dataset.nodeId = id;
   itemLink.appendChild(itemContent);
 
@@ -128,3 +128,4 @@ function toggleIcon(icon) {
     icon.textContent = 'add';
   }
 }
+
